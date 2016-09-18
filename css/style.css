@@ -1,0 +1,54 @@
+ body{
+ color:white;
+     background-color: black;
+     position: relative;
+        }
+#home_background{
+    background-image: url('../images/nature.jpg');
+    color: crimson;
+    height:650px;
+    width:100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+#aboutme{
+margin-top:-29px;
+background-color:crimson;
+color: white;
+padding-top: 40px; 
+padding-bottom: 40px; 
+margin-bottom: -9px;
+}
+#abt_me_img img{
+    height:5em;
+    width: 5em;
+}
+#mobile_hover:hover{
+    color:white;
+}
+
+
+#portfolio{
+    background-color: #213647;
+    
+    overflow: hidden;
+    display: block;
+    height:auto;
+    margin:auto;
+    padding-bottom: 20px;
+    margin-top:0.7em;
+    margin-bottom:0.7em;
+}
+
+#portfolio div:hover{
+    box-shadow: 0 5px  greenyellow;   
+}
+#contactme{
+    margin-top: -9px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+

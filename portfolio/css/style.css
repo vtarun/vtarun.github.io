@@ -1,0 +1,193 @@
+ body{
+     color:white;
+     background-color: black;
+     position: relative;
+    }
+
+#home_background{
+    background-image: url('../images/nature.jpg');
+    color: crimson;
+    height:650px;
+    width:100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#home_background > h1{
+    margin-top:200px;
+}
+
+#aboutme{
+margin-top:-29px;
+background-color:crimson;
+color: white;
+padding-top: 20px; 
+padding-bottom: 40px; 
+margin-bottom: -9px;
+}
+
+#abtme_description{
+    float:left;
+    padding-left:12%;    
+}
+#aboutme > h1{
+    width:180px;
+    color:white;
+    margin:8px  auto 15px auto;
+    text-align: center;
+    border: 1px solid yellow;
+    box-sizing: border-box;
+}
+#abtme_dp{
+    width:40%;
+    height:40%; 
+    border-radius:50%;
+    margin-right:17%;
+    padding:5px;
+}
+#abt_me_img img{
+    height:5em;
+    width: 5em;
+    border-radius:9px;
+}
+#mobile_hover:hover{
+    color:white;
+}
+/* portfolio style */
+
+#portfolio{
+/*    background-color: #222;*/
+    background-color: #003333;
+    padding-bottom: 40px;
+    margin:auto;
+    margin-top:0.7em;
+    margin-bottom:0.7em;
+    position:relative;
+    overflow: hidden;
+/*    border: 1px solid green;*/
+}
+
+#portfolio > h1 {
+    width:150px;
+    margin:26px  auto 15px auto;
+    
+    text-align: center;
+    border: 1px solid yellow;
+    box-sizing: border-box;
+/*    display:flex;*/
+}
+#portfolio > div {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    overflow:hidden;
+    background-color: #003333;
+    text-align: center;
+    position:relative;
+}
+
+#portfolio  div > div{
+    max-width:325px;
+    padding:0px;
+    height: auto;
+    border: 1px solid white;
+    margin:20px;
+    display:inline-block;
+    
+}
+figure{
+    max-width:100%;
+    max-height: auto;
+/*    margin: auto;*/
+    position:relative;
+    overflow:hidden;
+}
+img{
+    transition: all 0.5s ease;
+     max-width:100%;
+    max-height:auto;
+}
+#portfolio div > div figcaption{
+    opacity: 0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.8);
+	color: white;
+     transition: all 0.5s ease;
+}
+#portfolio  div > div:hover{
+    border: 1px solid yellow;
+}
+#portfolio div > div:hover img{
+    transform: scale(1.3);
+     
+}
+
+#portfolio div > div:hover figcaption{
+     opacity: 1;
+/*    border-radius: 1px solid yellow;*/
+}
+
+/* for mobile size screen width : 0px tp 650px  */
+
+@media screen and (max-width: 720px)  {
+    #portfolio{
+        background-color: blue;
+    }
+    #portfolio >div {
+        width:100%;
+        background-color: blue;
+    }
+    #portfolio  div >div{
+        margin:10px;
+        max-width:360px;
+    }
+    
+}
+/* for tablet width:720px to 750px */
+
+@media screen and (max-width: 750px) and (min-width : 720px) {
+    #portfolio{
+        background-color: blue;
+    }
+    #portfolio >div {
+        width:100%;
+        background-color: blue;
+    }
+    #portfolio  div >div{
+        margin:10px;
+        max-width:310px;
+    }
+    
+}
+
+
+/* contact me portion style */
+
+#contactme{
+    margin-top: -9px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+/*    background-color: #222;*/
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left:0; 
+    margin-bottom:0.7em;
+}
+#contactme > h1 {
+    width:200px;
+    color:white;
+    margin:8px  auto 15px auto;
+    text-align: center;
+    border: 1px solid yellow;
+    box-sizing: border-box;
+/*    margin-top:0.3em;*/
+    
+}
+

@@ -1,55 +1,83 @@
  body{
+     
      color:white;
      background-color: black;
      position: relative;
+     
     }
-
+nav {
+  font-family:"Courier New" ,Courier, monospace;
+}
 #home_background{
-    background-image: url('../images/nature.jpg');
+    
+    background-image: url('../images/home.jpg');
     color: crimson;
     height:650px;
     width:100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    position:relative;
+
 }
-
-
+.navbar-inverse {
+    background: transparent;
+    border:none;
+    margin-top:10px;
+    
+}
+.navbar-inverse div div  li > a {
+    color : crimson;
+    background: none;
+}
+.navbar-inverse div div  li > a:hover {
+    background-color: yellow;
+}
 #home_background > h1{
     margin-top:200px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing:border-box;
+    text-shadow: 1px 2px 3px white;
 }
 
 #aboutme{
-margin-top:-29px;
-background-color:crimson;
-color: white;
-padding-top: 20px; 
-padding-bottom: 40px; 
-margin-bottom: -9px;
+    margin-top:-29px;
+    background-color:brown;
+    color: white;
+    padding-top: 20px; 
+    padding-bottom: 40px; 
+    margin-bottom: -9px;
 }
 
 #abtme_description{
-    float:left;
-    padding-left:12%;    
+
+    width:50%;
+    float:right;
+    font-family:"Courier New",Courier, monospace;
+    
 }
-#aboutme > h1{
-    width:180px;
-    color:white;
-    margin:8px  auto 15px auto;
-    text-align: center;
-    border: 1px solid yellow;
-    box-sizing: border-box;
+#abtme_dp_container{
+    
+    width: 50%;
+    float:left;
+    margin-top:2%;
+    
 }
 #abtme_dp{
+    
     width:40%;
     height:40%; 
     border-radius:50%;
-    margin-right:17%;
-    padding:5px;
+    padding:0px;
+    margin:39px;
+     
 }
-#abt_me_img img{
-    height:5em;
-    width: 5em;
+#myskills_logo img{
+    height:6em;
+    width: 6em;
     border-radius:9px;
+    margin-left: 20px;
 }
 #mobile_hover:hover{
     color:white;
@@ -57,7 +85,6 @@ margin-bottom: -9px;
 /* portfolio style */
 
 #portfolio{
-/*    background-color: #222;*/
     background-color: #003333;
     padding-bottom: 40px;
     margin:auto;
@@ -65,12 +92,11 @@ margin-bottom: -9px;
     margin-bottom:0.7em;
     position:relative;
     overflow: hidden;
-/*    border: 1px solid green;*/
 }
 
 #portfolio > h1 {
     width:150px;
-    margin:26px  auto 15px auto;
+    margin:40px  auto 30px auto;
     
     text-align: center;
     border: 1px solid yellow;
@@ -113,12 +139,12 @@ img{
     position:absolute;
     width:100%;
     height:100%;
-    top:0;
+    top:-40px;
     left:0;
     right:0;
     background: rgba(0,0,0,0.8);
 	color: white;
-     transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
 #portfolio  div > div:hover{
     border: 1px solid yellow;
@@ -130,42 +156,89 @@ img{
 
 #portfolio div > div:hover figcaption{
      opacity: 1;
-/*    border-radius: 1px solid yellow;*/
+    top:0;
 }
 
 /* for mobile size screen width : 0px tp 650px  */
 
 @media screen and (max-width: 720px)  {
+    #abtme_description{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26%;
+        
+    }
+    
+    #abtme_dp_container{
+        width:100%;
+        margin-top: -35%;
+        position: absolute;
+
+    }
+    #abtme_dp{
+        width: 50%;
+    }
+    
     #portfolio{
-        background-color: blue;
+        background-color: #003333;
     }
     #portfolio >div {
         width:100%;
-        background-color: blue;
+        background-color: #003333;
     }
     #portfolio  div >div{
         margin:10px;
         max-width:360px;
     }
-    
+    #contactme  ul > li {
+        display: block;
+        margin-top: 10px;
+    }
+    .navbar-inverse container-fluid{
+        width:100%;
+    }
 }
 /* for tablet width:720px to 750px */
 
-@media screen and (max-width: 750px) and (min-width : 720px) {
+@media screen and (max-width: 980px) and (min-width : 720px) {
+    
+    #abtme_description{
+        width:100%;
+        margin-top: 15%;
+    }
+    #abtme_dp_container{
+        width:100%;
+        position: absolute;
+         margin-top: -21%;
+    }
+    #abtme_dp{
+    width:30%;
+/*    height:30%; */
+    }
+    
     #portfolio{
-        background-color: blue;
+        background-color: #003333;
     }
     #portfolio >div {
         width:100%;
-        background-color: blue;
+        background-color: #003333;
     }
     #portfolio  div >div{
         margin:10px;
         max-width:310px;
     }
     
+    
 }
 
+@media screen and (max-width: 1100px) and (min-width : 980px) {
+    
+    #abtme_dp_container{
+    margin-top:10%;
+}
+   
+}
 
 /* contact me portion style */
 
@@ -180,10 +253,14 @@ img{
     left:0; 
     margin-bottom:0.7em;
 }
+.contactme_icons > img{
+    width:35px;
+    border-radius: 50%;
+}
 #contactme > h1 {
     width:200px;
     color:white;
-    margin:8px  auto 15px auto;
+    margin:20px  auto 25px auto;
     text-align: center;
     border: 1px solid yellow;
     box-sizing: border-box;
@@ -191,3 +268,6 @@ img{
     
 }
 
+ .nav-up {
+        top: -80px;
+    }

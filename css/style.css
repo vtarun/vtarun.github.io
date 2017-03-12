@@ -5,20 +5,22 @@
      position: relative;
      
     }
+.my-navbar-width{
+    width:80%;
+}
+#mynavbar ul li > a{
+    font-size:20px;
+    margin-left:3px;
+}
+.my-navbar-width .navbar-header > a{
+    font-size:20px;
+    border-radius:5px;
+    color:crimson;
+}
 nav {
   font-family:"Courier New" ,Courier, monospace;
 }
-#home_background{
-    
-    background-image: url('../images/home.jpg');
-    color: crimson;
-    height:650px;
-    width:100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position:relative;
 
-}
 .navbar-inverse {
     background: transparent;
     border:none;
@@ -32,6 +34,19 @@ nav {
 .navbar-inverse div div  li > a:hover {
     background-color: yellow;
 }
+
+#home_background{
+    
+    background-image: url('../images/home.jpg');
+    color: crimson;
+    height:650px;
+    width:100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position:relative;
+
+}
+
 #home_background > h1{
     margin-top:200px;
     align-content: center;
@@ -39,6 +54,13 @@ nav {
     margin-right: auto;
     box-sizing:border-box;
     text-shadow: 1px 2px 3px white;
+}
+
+#home_background > h3{
+     margin-left:auto;
+    margin-right:auto;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px black;
 }
 
 #aboutme{
@@ -56,6 +78,14 @@ nav {
     float:right;
     font-family:"Courier New",Courier, monospace;
     
+}
+
+#abtme_description > u {
+     color:yellow;
+}
+
+#abtme_description u h1{
+     color:white;
 }
 #abtme_dp_container{
     
@@ -252,6 +282,20 @@ img{
     bottom: 0;
     left:0; 
     margin-bottom:0.7em;
+}
+
+#contactme > ul {
+    margin-bottom:25px;
+}
+#contactme ul > li {
+    margin:0 2em;
+}
+#contactme ul li > span{
+    font-size:20px;
+}
+
+#contactme ul li span > img {
+     width:35px;
 }
 .contactme_icons > img{
     width:35px;
